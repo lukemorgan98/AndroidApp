@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">weTrade</string>
+    <string name="searchText">Search by Brand</string>
+    <string name="searchButtonText">Search</string>
+    <string name="showClothesButton">Show Electronic</string>
+    <string name="nextPageButton">Seller Page</string>
+    <string name="languageSelected">EN</string>
+</resources>

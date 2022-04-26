@@ -1,3 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">weTrade</string>
+    <string name="searchText">recherche par marque</string>
+    <string name="searchButtonText">chercher</string>
+    <string name="showClothesButton">montrer l`electronique</string>
+    <string name="nextPageButton">page vendeur</string>
+    <string name="languageSelected">FR</string>
 </resources>
