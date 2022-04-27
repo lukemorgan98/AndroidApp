@@ -158,39 +158,11 @@ public class SellerActivity extends AppCompatActivity {
                                         String Name = seller.getString("name");
                                         String Location = seller.getString("location");
                                         int Rating = seller.getInt("rating");
-                                        int ElectronicSold = seller.getInt("electronicSold");
+                                        int ElectronicSold = seller.getInt("electronicsSold");
                                         output=String.valueOf(ID) + ", " + Name + ", " + String.valueOf(Location) + ", " +
                                                 String.valueOf(Rating)  + ", "  + String.valueOf(ElectronicSold) +"\n\n";
                                     }
                                 }
-                                else if(searchWord[0].toLowerCase().contains("D.I.D")) {
-
-                                    for (int i = 0; i < 1; i++) {
-                                        seller = response.getJSONObject(1);
-                                        int ID = seller.getInt("id");
-                                        String Name = seller.getString("name");
-                                        String Location = seller.getString("location");
-                                        int Rating = seller.getInt("rating");
-                                        int ElectronicSold = seller.getInt("electronicSold");
-                                        output=String.valueOf(ID) + ", " + Name + ", " + String.valueOf(Location) + ", " +
-                                                String.valueOf(Rating)  + ", "  + String.valueOf(ElectronicSold) +"\n\n";
-                                    }
-                                }
-
-                                else if(searchWord[0].toLowerCase().contains("harvey normans")) {
-
-                                    for (int i = 0; i < 1; i++) {
-                                        seller = response.getJSONObject(2);
-                                        int ID = seller.getInt("id");
-                                        String Name = seller.getString("name");
-                                        String Location = seller.getString("location");
-                                        int Rating = seller.getInt("rating");
-                                        int ElectronicSold = seller.getInt("electronicSold");
-                                        output=String.valueOf(ID) + ", " + Name + ", " + String.valueOf(Location) + ", " +
-                                                String.valueOf(Rating)  + ", "  + String.valueOf(ElectronicSold) +"\n\n";
-                                    }
-                                }
-
                                 else{
                                     mTextViewResult.setText("");
                                     output = "Sorry, search again : " + searchWord[0];
@@ -225,7 +197,7 @@ public class SellerActivity extends AppCompatActivity {
                                     String Name = seller.getString("name");
                                     String Location = seller.getString("location");
                                     int Rating = seller.getInt("rating");
-                                    int ElectronicSold = seller.getInt("electronicSold");
+                                    int ElectronicSold = seller.getInt("electronicsSold");
                                     output=String.valueOf(ID) + ", " + Name + ", " + String.valueOf(Location) + ", " +
                                             String.valueOf(Rating)  + ", "  + String.valueOf(ElectronicSold) +"\n\n";
 
@@ -267,7 +239,7 @@ public class SellerActivity extends AppCompatActivity {
                                 String Name = seller.getString("name");
                                 String Location = seller.getString("location");
                                 int Rating = seller.getInt("rating");
-                                int ElectronicSold = seller.getInt("electronicSold");
+                                int ElectronicSold = seller.getInt("electronicsSold");
 
                                 if(getButtonClicked=true){
                                     mTextViewResult.append(String.valueOf(ID) + ", " + Name + ", " + String.valueOf(Location) + ", " +
